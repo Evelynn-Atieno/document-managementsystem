@@ -24,7 +24,7 @@ const home = () => {
           <Chart title="Last 6 months (Revenue)" aspect={2/1}/>
         </div>
         <div className="listContainer">
-          <div className="listTitle">latest transactions</div>
+          <div className="listTitle">latest accessed documents</div>
           <Table/>
         </div>
       </div>

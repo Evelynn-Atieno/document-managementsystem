@@ -1,8 +1,8 @@
 import "./widget.scss"
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
-import FilterFramesOutlinedIcon from '@mui/icons-material/FilterFramesOutlined';
-import LocalAtmOutlinedIcon from '@mui/icons-material/LocalAtmOutlined';
+import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
+import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 import AccountBalanceOutlinedIcon from '@mui/icons-material/AccountBalanceOutlined';
 const Widget = ({type}) => {
   
@@ -30,7 +30,7 @@ const Widget = ({type}) => {
         title:"FILES",
         isMoney:false,
         link:"view all files",
-        icon: <FilterFramesOutlinedIcon className="icon"
+        icon: <InsertDriveFileOutlinedIcon className="icon"
         style={{color:"green",
         backgroundColor: "rgba(0, 128, 0, 0.137)",
       }}/>,
@@ -39,10 +39,10 @@ const Widget = ({type}) => {
       };
       break;case"earning":
       data={
-        title:"EARNINGS",
-        isMoney:true,
-        link:"view net earnings",
-        icon: <LocalAtmOutlinedIcon className="icon"
+        title:"GROUPS",
+        isMoney:false,
+        link:"view all groups",
+        icon: <GroupsOutlinedIcon  className="icon"
         style={{color:"yellow",
         backgroundColor: "rgba(255, 255, 0, 0.089)",
       }}/>,
@@ -52,7 +52,7 @@ const Widget = ({type}) => {
       break;case"balance":
       data={
         title:"BALANCE",
-        isMoney:true,
+        isMoney:false,
         link:"see details",
         icon: <AccountBalanceOutlinedIcon className="icon"
         style={{color:"blue",
@@ -77,10 +77,7 @@ const Widget = ({type}) => {
           <span className="link">{data.link}</span>
           </div>
       <div className="right"> 
-         <div className="percentage positive">
-          <KeyboardArrowUpOutlinedIcon/>
-          {diff}%
-          </div>
+        
           {data.icon}
       </div>
            

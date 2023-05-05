@@ -1,8 +1,8 @@
 import "./sidebar.scss";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
-import Inventory2TwoToneIcon from '@mui/icons-material/Inventory2TwoTone';
-import FilterFramesIcon from '@mui/icons-material/FilterFrames';
+import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
+import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import NotificationAddIcon from '@mui/icons-material/NotificationAdd';
@@ -39,22 +39,17 @@ const Sidebar= () => {
             </Link>
             <Link to= "/products" style={{textDecoration:"none"}}>
             <li>
-              <Inventory2TwoToneIcon className="icon"/>
-              <span>Products</span>
+              <InsertDriveFileOutlinedIcon className="icon"/>
+              <span>Files</span>
             </li>
            </Link>
             
             <li>
-              <FilterFramesIcon className="icon"/>
-              <span>Orders</span>
+              <GroupsOutlinedIcon className="icon"/>
+              <span>Groups</span>
             </li>
           
-        
-            <li>
-              <DeliveryDiningIcon className="icon"/>
-              <span>Delivery</span>
-            </li>
-        
+      
             <p className="title">USEFUL</p>
             <li>
               <QueryStatsIcon className="icon"/>
