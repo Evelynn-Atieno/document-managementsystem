@@ -3,7 +3,8 @@ import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutl
 import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
-import AccountBalanceOutlinedIcon from '@mui/icons-material/AccountBalanceOutlined';
+import Groups2OutlinedIcon from '@mui/icons-material/Groups2Outlined';
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 const Widget = ({type}) => {
   
     let data;
@@ -25,36 +26,36 @@ const Widget = ({type}) => {
           
       };
       break;
-      case"files":
+      case"documents":
       data={
-        title:"FILES",
+        title:"DOCUMENTS",
         isMoney:false,
-        link:"view all files",
-        icon: <InsertDriveFileOutlinedIcon className="icon"
+        link:"view all documents",
+        icon: <ArticleOutlinedIcon className="icon"
         style={{color:"green",
         backgroundColor: "rgba(0, 128, 0, 0.137)",
       }}/>,
         
           
       };
-      break;case"earning":
+      break;case"files":
       data={
-        title:"GROUPS",
+        title:"FILES",
         isMoney:false,
-        link:"view all groups",
-        icon: <GroupsOutlinedIcon  className="icon"
+        link:"view all files",
+        icon: <InsertDriveFileOutlinedIcon className="icon"
         style={{color:"yellow",
         backgroundColor: "rgba(255, 255, 0, 0.089)",
       }}/>,
       
           
       };
-      break;case"balance":
+      break;case"groups":
       data={
-        title:"BALANCE",
+        title:"GROUPS",
         isMoney:false,
-        link:"see details",
-        icon: <AccountBalanceOutlinedIcon className="icon"
+        link:"view all groups",
+        icon: <Groups2OutlinedIcon className="icon"
         style={{color:"blue",
         backgroundColor: "rgba(0, 0, 255, 0.089)",
       }}

@@ -14,14 +14,14 @@ const home = () => {
         <Navbar/>
         <div className="widgets">
           <Widget type="user"/>
+          <Widget type="documents"/>
           <Widget type="files"/>
-          <Widget type="earning"/>
-          <Widget type="balance"/>
+          <Widget type="groups"/>
 
         </div>
         <div className="charts">
           <Featured/>
-          <Chart title="Last 6 months (Revenue)" aspect={2/1}/>
+          <Chart title="Last 6 months (documents added)" aspect={2/1}/>
         </div>
         <div className="listContainer">
           <div className="listTitle">latest accessed documents</div>
