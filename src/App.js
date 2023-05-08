@@ -3,8 +3,9 @@ import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
+import File from "./pages/single/File";
 import{ BrowserRouter,Routes,Route,}from "react-router-dom";
-import { productInputs } from "./formSource";
+import { DocumentInputs } from "./formSource";
 import { userInputs } from "./formSource";
 
 function App(){
@@ -21,10 +22,10 @@ function App(){
                       <Route path="new"element={<New inputs ={userInputs} title="Add New User"/>}/>
                       </Route>
 
-                      <Route path="products">
+                      <Route path="files">
                       <Route index element={<List/>}/>
-                      <Route path=":productId"element={<Single/>}/>
-                      <Route path="new"element={<New inputs={productInputs} title="Add New Product"/>}/>
+                      <Route path=":fileId"element={<File/>}/>
+                      <Route path="new"element={<New inputs={DocumentInputs} title="Add New Document"/>}/>
                       
                       </Route>
 

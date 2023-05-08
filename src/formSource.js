@@ -43,7 +43,7 @@ export const userInputs=[
       
 ];
 
-export const productInputs =[
+export const DocumentInputs =[
     {
         id: 1,
         label: "Title",
