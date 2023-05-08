@@ -1,5 +1,6 @@
 
-import './login.scss';import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+import './login.scss';
+import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 
 const Login = () => {
   

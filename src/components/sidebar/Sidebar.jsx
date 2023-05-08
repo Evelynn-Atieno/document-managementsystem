@@ -19,7 +19,7 @@ const Sidebar= () => {
     <div className='sidebar'>
         <div className="top">
           <Link to= "/" style={{textDecoration:"none"}}>
-          <span className="logo"> lamadmin</span>
+          <span className="logo">Admin</span>
           </Link>
           </div>
           <hr />
@@ -37,7 +37,7 @@ const Sidebar= () => {
               <span>Users</span>
             </li>
             </Link>
-            <Link to= "/products" style={{textDecoration:"none"}}>
+            <Link to= "/files" style={{textDecoration:"none"}}>
             <li>
               <InsertDriveFileOutlinedIcon className="icon"/>
               <span>Files</span>
