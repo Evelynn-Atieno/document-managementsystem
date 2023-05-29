@@ -3,7 +3,7 @@ import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
-import File from "./pages/single/File";
+import File from "./pages/list/File";
 import{ BrowserRouter,Routes,Route,}from "react-router-dom";
 import { DocumentInputs } from "./formSource";
 import { userInputs } from "./formSource";
@@ -23,7 +23,7 @@ function App(){
                       </Route>
 
                       <Route path="files">
-                      <Route index element={<List/>}/>
+                      <Route index element={<File/>}/>
                       <Route path=":fileId"element={<File/>}/>
                       <Route path="new"element={<New inputs={DocumentInputs} title="Add New Document"/>}/>
                       
