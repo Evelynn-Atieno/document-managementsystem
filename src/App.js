@@ -4,13 +4,16 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import File from "./pages/list/File";
+import Userdashboard from "./pages/userdashboard/Userdashboard";
 import{ BrowserRouter,Routes,Route,}from "react-router-dom";
 import { DocumentInputs } from "./formSource";
 import { userInputs } from "./formSource";
 
 function App(){
     return(
-        <div ClassName="App">
+
+
+        <div ClassName="App">  
             <BrowserRouter>
                <Routes>
                  <Route path="/" >
@@ -28,6 +31,10 @@ function App(){
                       <Route path="new"element={<New inputs={DocumentInputs} title="Add New Document"/>}/>
                       
                       </Route>
+
+                      <Route path="userdashboard" element={<Userdashboard/>}/>
+
+                    
 
                     
 
