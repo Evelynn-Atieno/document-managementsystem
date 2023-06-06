@@ -1,8 +1,8 @@
 import "./usersidebar.scss"
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
-import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
-import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
+import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
+import LocalActivityOutlinedIcon from '@mui/icons-material/LocalActivityOutlined';
+import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import NotificationAddIcon from '@mui/icons-material/NotificationAdd';
@@ -18,9 +18,9 @@ const Usersider = () => {
     
          <div className='sidebar'>
         <div className="top">
-          <Link to= "/" style={{textDecoration:"none"}}>
+         
           <span className="logo">USER</span>
-          </Link>
+         
           </div>
           <hr />
         <div className="center">
@@ -33,20 +33,20 @@ const Usersider = () => {
            <p className="title">LIST</p>
            <Link to= "/users" style={{textDecoration:"none"}}>
             <li>
-              <Person2OutlinedIcon className="icon"/>
-              <span>Users</span>
+              < ArticleOutlinedIcon className="icon"/>
+              <span>Documents</span>
             </li>
             </Link>
             <Link to= "/files" style={{textDecoration:"none"}}>
             <li>
-              <InsertDriveFileOutlinedIcon className="icon"/>
-              <span>Files</span>
+              < LocalActivityOutlinedIcon className="icon"/>
+              <span>Activity</span>
             </li>
            </Link>
             
             <li>
-              <GroupsOutlinedIcon className="icon"/>
-              <span>Groups</span>
+              <ArchiveOutlinedIcon className="icon"/>
+              <span>Archive</span>
             </li>
 
           
@@ -54,11 +54,7 @@ const Usersider = () => {
               <SettingsIcon className="icon"/>
               <span>Settings</span>
             </li>
-            <p className="title">USER</p>
-            <li>
-              <AccountCircleIcon className="icon"/>
-              <span>Profile</span>
-            </li>
+          
           
             <li>
               <LogoutIcon className="icon"/>
@@ -66,11 +62,7 @@ const Usersider = () => {
             </li>
           </ul>
           </div>
-        <div className="bottom">
-          <div className="colorOption"></div>
-          <div className="colorOption"></div>
-          <div className="colorOption"></div>
-        </div>
+        
     </div>
     
   )
