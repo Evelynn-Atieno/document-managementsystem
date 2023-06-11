@@ -8,6 +8,7 @@ import Userdashboard from "./pages/userdashboard/Userdashboard";
 import{ BrowserRouter,Routes,Route,}from "react-router-dom";
 import { DocumentInputs } from "./formSource";
 import { userInputs } from "./formSource";
+import Document from "./pages/list/Document"
 
 function App(){
     return(
@@ -33,7 +34,8 @@ function App(){
                       </Route>
 
                       <Route path="userdashboard" element={<Userdashboard/>}/>
-
+                      <Route path="Documents" element={<Document/>} />
+                      
                     
 
                     

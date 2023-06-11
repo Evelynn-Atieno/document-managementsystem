@@ -1,4 +1,4 @@
-import "./table.scss"
+import "./documentTable.scss"
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -7,37 +7,33 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-const List = () => {
-const rows=[
-    {
-        id: 77890,
-        document:"smart farming report",
-       foldername: "reports",
-        group: "Finance",
-        username: "John Smith",
-        date: "1 March 2023",
-        status: "closed",
-    },
-    {
-        id: 76898,
-        document:"software orders",
-        foldername: "tech orders",
-        group: "IT",
-        username:"Michael Doe" ,
-        date: "1 March 2023",
-        status: "open",
-    },
-    {
-        id:49029,
-        document:"smart farming report",
-        foldername: "reports",
-        group: "Finance",
-        username: "John Smith",
-        date: "1 March 2023",
-        status: "closed",
-    },
-
-];
+const Documenttable = () => {
+    const rows=[
+        {
+            id: 77890,
+            document:"smart farming report",
+           foldername: "reports",
+            owner: "John Smith",
+            Duedate: "1 March 2023",
+            status: "pending",
+        },
+        {
+            id: 76898,
+            document:"software orders",
+            foldername: "tech orders",
+            owner:"Michael Doe" ,
+            date: "1 March 2023",
+            status: "pending",
+        },
+        {
+            id:49029,
+            document:"smart farming report",
+            foldername: "reports",
+            owner: "John Smith",
+            Duedate: "1 March 2023",
+            status: "pending",
+        },
+]    
   return (
     <TableContainer component={Paper} className="table">
     <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -45,10 +41,9 @@ const rows=[
         <TableRow>
           <TableCell className="tableCell">TrackingId</TableCell>
           <TableCell className="tableCell">Document</TableCell>
-          <TableCell className="tableCell">FolderName</TableCell>
-          <TableCell className="tableCell">Group</TableCell>
-          <TableCell className="tableCell">UserName</TableCell>
-          <TableCell className="tableCell">Date</TableCell>
+          <TableCell className="tableCell">folderName</TableCell>
+          <TableCell className="tableCell">Owner</TableCell>
+          <TableCell className="tableCell">DueDate</TableCell>
           <TableCell className="tableCell">Status</TableCell>
         </TableRow>
       </TableHead>
@@ -62,9 +57,8 @@ const rows=[
                 </div>
             </TableCell>
             <TableCell className="table" >{row.foldername}</TableCell>
-            <TableCell className="table">{row.group}</TableCell>
-            <TableCell className="table">{row.username}</TableCell>
-            <TableCell className="table">{row.date}</TableCell>
+            <TableCell className="table">{row.owner}</TableCell>
+            <TableCell className="table">{row.Duedate}</TableCell>
             <TableCell className="table">
                 <span className={`status ${row.status}`}>{row.status}</span>
             </TableCell>
@@ -76,4 +70,4 @@ const rows=[
   )
 }
 
-export default List
+export default Documenttable
