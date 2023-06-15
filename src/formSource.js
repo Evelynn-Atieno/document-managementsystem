@@ -1,15 +1,15 @@
 export const userInputs=[
     {
       id: 1,
-      label: "Username",
+      label: "Name and Surname",
       type: "text",
-      placeholder: "john_doe",
+      placeholder: "John Doe",
     },
     {
         id: 2,
-        label: "Name and Surname",
+        label: "Group",
         type: "text",
-        placeholder: "John Doe",
+        placeholder: "IT department",
       },
       {
         id: 3,
@@ -46,32 +46,32 @@ export const userInputs=[
 export const DocumentInputs =[
     {
         id: 1,
-        label: "Title",
+        label: "Document Name",
         type: "text",
-        placeholder: "Apple Macbook pro",
+        placeholder: "document name",
       },
       {
         id: 2,
-        label: "Description",
+        label: "Folder Nmae",
         type: "text",
-        placeholder: "Description",
+        placeholder: "folder name",
       },
       {
         id: 3,
-        label: "Category",
+        label: "Owner",
         type: "text",
-        placeholder: "Computers",
+        placeholder: "John Smith",
       },
       {
         id: 4,
-        label: "Price",
+        label: "Group",
         type: "text",
-        placeholder: "100",
+        placeholder: "IT department",
       },
       {
         id: 5,
-        label: "Stock",
+        label: "Type",
         type: "text",
-        placeholder: "In stock",
+        placeholder: "Word document",
       },
 ];

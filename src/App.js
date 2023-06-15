@@ -8,7 +8,11 @@ import Userdashboard from "./pages/userdashboard/Userdashboard";
 import{ BrowserRouter,Routes,Route,}from "react-router-dom";
 import { DocumentInputs } from "./formSource";
 import { userInputs } from "./formSource";
-import Document from "./pages/list/Document"
+import Document from "./pages/list/Document";
+import Usersingle from "./pages/usernew/Usernew";
+import Usernew from "./pages/usernew/Usernew";
+  
+
 
 function App(){
     return(
@@ -34,7 +38,13 @@ function App(){
                       </Route>
 
                       <Route path="userdashboard" element={<Userdashboard/>}/>
-                      <Route path="Documents" element={<Document/>} />
+
+                      <Route path="documents">
+                        <Route index element={<Document/>}/>
+                      <Route path ="usernew"element={<Usernew inputs={DocumentInputs}title="Add New Document" />}/>
+
+                      </Route>
+                      
                       
                     
 

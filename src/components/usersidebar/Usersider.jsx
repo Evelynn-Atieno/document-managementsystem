@@ -26,12 +26,14 @@ const Usersider = () => {
         <div className="center">
           <ul>
             <p className="title">MAIN</p>
+            <Link to= "/userdashboard" style={{textDecoration:"none"}}>
             <li>
               <DashboardIcon className="icon"/>
               <span>Dashboard</span>
            </li>
+           </Link>
            <p className="title">LIST</p>
-           <Link to= "/users" style={{textDecoration:"none"}}>
+           <Link to= "/documents" style={{textDecoration:"none"}}>
             <li>
               < ArticleOutlinedIcon className="icon"/>
               <span>Documents</span>

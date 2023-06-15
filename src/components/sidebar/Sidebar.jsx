@@ -18,18 +18,22 @@ const Sidebar= () => {
   return (
     <div className='sidebar'>
         <div className="top">
-          <Link to= "/" style={{textDecoration:"none"}}>
-          <span className="logo">Admin</span>
-          </Link>
+          
+          <span className="logo">ADMIN</span>
+         
           </div>
           <hr />
         <div className="center">
           <ul>
             <p className="title">MAIN</p>
+            <Link to= "/" style={{textDecoration:"none"}}>
+    
+       
             <li>
               <DashboardIcon className="icon"/>
               <span>Dashboard</span>
            </li>
+           </Link>
            <p className="title">LIST</p>
            <Link to= "/users" style={{textDecoration:"none"}}>
             <li>
