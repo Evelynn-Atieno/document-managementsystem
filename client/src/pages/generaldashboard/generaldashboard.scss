@@ -1,0 +1,42 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210316/pngtree-purple-gray-3d-low-poly-technology-blur-background-image_587960.jpg");
+  background-size: "cover";
+  
+    h1 {
+      margin-bottom: 20px;
+    }
+  
+    .login-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      width: 200px;
+    
+  
+      &.employee {
+        background-color:purple;
+        color: white;
+
+        &:hover {
+          background-color: #3e8e41;
+        }
+      }
+  
+      &.admin {
+        background-color: purple;
+        color: white;
+
+        &:hover {
+          background-color: #3e8e41;
+        }
+      }
+    }
+  }

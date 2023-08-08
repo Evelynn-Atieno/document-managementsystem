@@ -1,0 +1,88 @@
+
+.login-form-container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+	
+	background-image: url("https://img.freepik.com/premium-photo/document-management-system-dms-being-setup-it-consultant-working-laptop-computer-office-software-archiving-searching-managing-corporate-files-information_35148-4639.jpg?w=826");
+  background-size: "cover";
+
+
+.text-danger{
+	color: red;
+	font: bold;
+}
+
+	
+  
+	h1 {
+	  margin-bottom: 30px;
+	  color:black;
+	  font-weight: bolder;
+	}
+	.icon{
+		border-radius: 5px;
+		padding: 5px;
+		background-color: rgba(128, 128, 128, 0.631);
+		font-size: 18px;
+	}
+  
+	form {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  
+	  
+	  
+  
+	  .form-group {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+		
+  
+		label {
+		  margin-bottom: 5px;
+		  font-weight: bold;
+		}
+  
+		input[type="text"],
+		input[type="password"] {
+		  padding: 10px;
+		  border-radius: 5px;
+		  border: 1px solid #ccc;
+		  font-size: 16px;
+		}
+	  }
+	
+	
+	
+	.option{
+		display: flex;
+		margin-top: 100px;
+		justify-content: space-between;
+		padding: 50px;
+		padding-bottom: 20px;
+	}
+	
+	
+	  
+  
+	  button[type="submit"] {
+		padding: 10px;
+		border-radius: 5px;
+		background-color:rgba(128, 0, 128, 0.504);
+		color: #fff;
+		font-size: 16px;
+		cursor: pointer;
+		transition: background-color 0.2s ease-in-out;
+  
+		&:hover {
+		  background-color: #3e8e41;
+		}
+	  }
+	}
+  }
+  
