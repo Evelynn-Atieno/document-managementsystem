@@ -12,6 +12,7 @@ import Document from "./pages/list/Document";
 import Usersingle from "./pages/usernew/Usernew";
 import Usernew from "./pages/usernew/Usernew";
 import General from "./pages/generaldashboard/General"
+import Employeelogin from "./pages/employeelogin/Employeelogin";
   
 
 
@@ -25,10 +26,16 @@ function App(){
                  <Route path="/" >
                     <Route index element={<General/>} />
                     <Route path="home"element={<Home/>}/>
-
                     <Route path="login">
-                      <Route index element ={<Login/>}/>
+                    <Route index element ={<Login/>}/>
+                 </Route>
+
+
+                   <Route path="employeelogin">
+                      <Route index element={<Employeelogin/>}/>
                     </Route>
+
+
                     <Route path="users">
                       <Route index element={<List/>}/>
                       <Route path=":userId"element={<Single/>}/>

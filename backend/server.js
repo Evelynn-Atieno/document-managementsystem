@@ -87,6 +87,32 @@ app.post('/', (req , res)=>{
 
 })
 
+
+app.post('/employeelogin', (req , res)=>{
+    const sql ="SELECT * FROM employee Where email=? AND password= ?";
+    con.query(sql,[req.body.email, req.body.password],(err,result) =>{
+        if (err)return res.json({Status: "Error", Error: "Error in runnning query"});
+        if(result.length > 0) {
+            const id=result[0].id
+            const token=jwt.sign({id}, "jwt-secret-key",{expiresIn: "1d"});
+            res.cookie('token',token);
+            return res.json({Status: "Success"})
+        }else{
+            return res.json({Status:"Error",Error: "Wrong Email or Password"})
+        }
+    })
+
+    
+
+
+})
+
+
+
+
+
+
+
 app.get('/logout', (req,res) => {
     res.clearCookie('token');
     return res.json({Status:"Success"})
